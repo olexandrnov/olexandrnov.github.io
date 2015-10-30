@@ -1,0 +1,93 @@
+body {
+    background-color: #000000;
+    font-family: "Tahoma", sans-serif;
+}
+
+.conteiner {
+    width: 960px;
+    height: 670px;
+    margin: auto;
+    padding-top: 130px;
+    background-image: url(../img/background.png);
+}
+
+.tree{
+    width: 125px;
+    height: 147px;
+    position: absolute;
+    margin-top: -67px;
+    margin-left: 215px;
+}
+
+/* Header */
+.top_header {
+    height: 80px;
+    /* width: 100%; */
+    margin-left: 50px;
+    margin-right: 75px;
+}
+
+.logo {
+    width: 263px;
+    height: 80px;
+    float:left;
+    color: #fff;
+}
+
+.logo>img {
+    width: 263px;
+}
+
+.logo>p {
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 2px 2px grey;
+}
+
+.contact {
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: right;
+}
+
+/* end of Header*/
+
+/* Content */
+
+.content {
+    margin-top: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.country {
+    width: 100%;
+}
+
+.country li {
+    display: inline-block;
+    width: 260px;
+    margin: 0 23px 23px 0;
+    vertical-align: top;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+}
+
+.image {
+    width: 260px;
+    height: 178px;
+    border: 2px solid gray;
+    border-radius: 2px;
+}
+/* end of Content*/
+
+/*Footer*/
+.copy {
+    margin-top: 110px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
+/*end of Footer*/
