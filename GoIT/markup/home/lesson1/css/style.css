@@ -1,5 +1,6 @@
 body {
 	background: gray;
+	font-size: 16px;
 }
 
 .page {
@@ -9,17 +10,8 @@ body {
 	padding: 20px 50px 50px 50px;
 }
 
-.header, .container, .contact, .footer {
+.line {
 	border-bottom: 1px solid gray;
-	padding-left: 20px;
-}
-
-.container {
-	line-height: 30px;
-}
-
-.footer {
-	border-bottom: none;
 }
 
 h3 {
@@ -27,18 +19,14 @@ h3 {
 	font-size: 25px;
 }
 
-#img {
+.img {
 	text-align: center;
 }
 
-.num {
-	margin-bottom: 30px;
+p, ul {
+	margin-left: 10px;
 }
 
-p {
-	font-size: 16px;
-}
-
-ul li {
-	font-size: 16px;
+span {
+	display: block;
 }
