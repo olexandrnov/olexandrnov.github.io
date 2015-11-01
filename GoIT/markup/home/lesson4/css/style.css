@@ -80,18 +80,22 @@ header {
   background-color: #333333;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 1);
 }
+
+.top_menu .menu {
+  text-align: center;
+}
 /*MAIN MENU*/
 .menu a {
   background-color: #333333;
 }
 
 .menu li {
-  float: left;
+  display: inline-block;
 }
 
-.menu>li:first-child {
+/*.menu>li:first-child {
   margin-left: 32px;
-}
+}*/
 
 .menu li a {
   display: block;
