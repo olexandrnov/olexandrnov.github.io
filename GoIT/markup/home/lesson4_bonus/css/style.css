@@ -1,0 +1,236 @@
+body {
+  background: url(../img/background.png) repeat-x;
+  background-color: #0C739F;
+  font-family: 'Tahoma', sans-serif;
+}
+
+.main {
+  margin: auto;
+  width: 1000px;
+  box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.65);
+  background-color: white;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/*HEADER*/
+header {
+  height: 414px;
+}
+
+#image {
+  border-top: 1px solid #128AA7;
+  border-bottom: 1px solid #128AA7;
+}
+
+.top_right {
+  float: right;
+}
+
+.contacts {
+  width: 150px;
+  height: 67px;
+  margin-top: 8px;
+  margin-left: 198px;
+  color: #128AA7;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.contacts h3 {
+  font-weight: bold;
+}
+
+.country {
+  width: 355px;
+  height: 55px;
+  margin-top: 36px;
+}
+
+.country ul li {
+  display: inline-block;
+  margin-right: 8px;
+  text-align: center;
+
+}
+
+.country ul li a {
+  font-size: 9px;
+  color: #128AA7;
+}
+
+.logo {
+  background-image: url(../img/logo.png);
+  width: 283px;
+  height: 164px;
+  margin-top: 11px;
+  margin-left: 27px;
+  float: left;
+}
+/*AND OF HEADER*/
+
+/*MENU*/
+.top_menu {
+  width: 1000px;
+  height: 28px;
+  background-color: #333333;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 1);
+}
+
+.top_menu .menu {
+    text-align: center;
+}
+/*MAIN MENU*/
+.menu a {
+  background-color: #333333;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding-left: 34px;
+  padding-right: 34px;
+  line-height: 25px;
+  font-size: 14px;
+}
+/*END OF MAIN MENU*/
+/*DROPDOWN MENU*/
+.menu_list {
+  position: relative;
+}
+
+.menu_drop {
+  position: absolute;
+  left:-9999px;
+  opacity: 0;
+  box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 1);
+    z-index: 1;
+}
+
+.menu_drop li {
+  float: none;
+}
+
+.menu_drop a {
+  white-space: nowrap;
+  display: block;
+}
+
+.menu_list:hover .menu_drop {
+  opacity: 1;
+  left: 0;
+}
+
+.menu_drop>li:first-child {
+  border-top: 5px solid transparent;
+}
+
+.menu_list:after{
+  content: " ";
+  position: absolute;
+  border: 4px solid;
+  border-color: #fff transparent transparent transparent;
+  top: 12px;
+  right: 20px;
+}
+/*END OF DROPMENU*/
+/*END OF MENU*/
+
+/*CNOTEINER*/
+.fon3 {
+    margin-top: 3px;
+    width: 100%;
+    float: left;
+    background: lightgray;
+    position: relative;
+    overflow: hidden;
+}
+
+.fon2 {
+    width: 100%;
+    float: left;
+    background: white;
+    position: relative;
+    right: 25%;
+}
+
+.fon1 {
+    width: 100%;
+    float: left;
+    background: lightgray;
+    position: relative;
+    right: 50%;
+}
+/*LEFT COLUMN*/
+.left {
+    float: left;
+    width: 23%;
+    position: relative;
+    overflow: hidden;
+    left: 76%;
+}
+
+.left h1 {
+  font-size: 18px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.left p {
+  padding: 10px;
+}
+
+/*CCENTER COLUMN*/
+.content {
+    float: left;
+    width: 48%;
+    position: relative;
+    overflow: hidden;
+    left: 78%;
+}
+
+.content h1 {
+  font-size: 18px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+/*RIGHT COLUMN*/
+.right {
+    float: left;
+    width: 23%;
+    position: relative;
+    overflow: hidden;
+    left: 80%;
+}
+
+
+.right h1 {
+  font-size: 18px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.right p {
+  padding: 10px;
+}
+
+/*END OF CNOTEINER*/
+
+/*FOOTER*/
+.footer {
+  font-size: 12px;
+  text-align: center;
+  color: white;
+  margin: 20px;
+}
+/*END OF FOOTER*/
