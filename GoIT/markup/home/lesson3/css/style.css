@@ -1,9 +1,15 @@
 body {
 	background-color: #f9f9f9;
-	font-family: 'PT Sans', sans-serif;
+	font: 17px 'PT Sans' sans-serif;
 }
 
-.conteiner { 
+.clearfix:after {
+  	content: '';
+  	display: block;
+  	clear: both;
+}
+
+.container { 
 	width: 960px;
 	margin: auto;
 	padding: 50px;
@@ -39,8 +45,6 @@ div.menu ul li {
 	width: 125px;
 	height: 40px;
 	color: #fff;
-	font-size: 17px;
-
 }
 
 div.menu ul li a {
@@ -65,26 +69,35 @@ div.menu ul li a:hover {
 
 /*end of Header*/
 
+/*Containner*/
+
+.conteinner {
+	margin-top: 50px;
+}
 
 /*Left menu*/
 aside {
 	width: 240px;
-	margin-top: 50px;
 	float: left;
+	border: 1px solid #999999;
 }
 
 div.left_menu ul li {
 	display: block;
 	height: 38px;
 	font-size: 17px;
-	border: 1px solid #c8c8c8;
+	border-top: 1px solid #999999;
+}
+
+div.left_menu ul li:first-child {
+	border-top: none;
 }
 
 div.left_menu ul li a {
 	display: block;
 	height: 38px;
 	padding-left: 24px;
-	color: #c8c8c8;
+	color: #999999;
 	text-decoration: none;
 	text-align: left;
 	line-height: 38px;
@@ -103,9 +116,9 @@ div.left_menu ul li a:hover {
 
 /*Content*/
 .content {
-	margin-top: 50px;
-	margin-left: 300px;
-	text-align: center;
+	float: right;
+	width: 650px;
+	text-align: left;
 }
 
 .image {
@@ -120,49 +133,39 @@ p {
 	line-height: 24px;
 }
 /*end of Content*/
+/*End of Conteinner*/
 
 /*Footer*/
 
 footer {
-	margin-top: 60px;
-}
-
-div.foot_menu {
-	float: left;
+	height: 40px;
+	padding: 0 24px;
 	background-color: #e1e1e1;
 }
 
-div.foot_menu ul li {
-	display: inline-block;
-	width: 125px;
-	height: 36px;
-	color: #000;
-	font-size: 14px;
+footer li {
+	float: left;
+	margin: 0 40px;
 
 }
 
-div.foot_menu ul li a {
+footer li:first-child {
+	margin-left: 0;
+}
+
+footer li a, .copy {
 	display: block;
-	height: 36px;
+	line-height: 40px;
+	font-size: 14px;
 	text-decoration: none;
 	color: #000;
-	text-align: center;
-	line-height: 38px;
 }
 
-div.foot_menu ul li:hover {
-	background-color: #e1e1e1;
-}
-
-div.foot_menu ul li a:hover {
+footer li a:hover {
 	text-decoration: underline;
 }
 
-.copy>p {
-	padding-right: 20px;
-	background-color: #e1e1e1;
-	line-height: 38px;
-	font-size: 14px;
-	text-align: right;
+.copy {
+	float: right;
 }
 /*end of Footer*/
