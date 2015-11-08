@@ -1,0 +1,29 @@
+.wrapper {
+	display: block;
+	text-align: -webkit-center;
+}
+
+table, td {
+	border: 5px solid black;
+    border-collapse: collapse;
+}
+
+td {
+	height: 50px;
+}
+
+.two td, .three td {
+	height: 140px;
+}
+
+.four td, .five td {
+	height: 70px;
+}
+
+.six td, .seven td {
+	height: 40px;
+}
+
+.five {
+	width: 135px;
+}
