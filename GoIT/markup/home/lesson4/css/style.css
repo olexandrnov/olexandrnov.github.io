@@ -22,7 +22,7 @@ header {
   height: 414px;
 }
 
-#image {
+.image {
   border-top: 1px solid #128AA7;
   border-bottom: 1px solid #128AA7;
 }
@@ -74,25 +74,6 @@ header {
 /*AND OF HEADER*/
 
 /*MENU*/
-/*.menu {
-  background-color: #303030;
-  text-align: justify;
-}
-/*MAIN MENU*/
-/*.menu li {
-  display: inline-block;
-  margin: 0 33px;
-  height: 28px;
-  text-align: left;
-}
-
-
-
-.menu li.helper {
-  width: 100%;
-  height: 0;
-  visibility: hidden;
-}*/
 
 .menu {
   background-color: #303030;
@@ -109,7 +90,7 @@ header {
   display: inline-block;
 }
 
-.menu > li  {
+.menu li  {
   display: inline-block;
   position: relative;
   line-height: normal;
@@ -118,13 +99,26 @@ header {
   font-size: 14px;
 }
 
-.menu > li > a {
+.menu li a {
   display: block;
+  position: relative;
   padding: 0 34px;
   line-height: 28px;
   color: #fff;
   font-size: 14px;
   text-decoration: none;
+}
+
+.menu ul+a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -2px;
+  right: 10px;
+  height: 6px;
+  width: 5px;
+  background: url(../img/triangle.png) 0 0 no-repeat;
 }
 
 /*END OF MAIN MENU*/
@@ -145,7 +139,7 @@ header {
   background-color: #303030;;
 }
 
-.menu > li > ul > li > a {
+.menu li ul li a {
   display: block;
   padding: 0 19px;
   line-height: 28px;
