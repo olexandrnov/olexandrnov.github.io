@@ -8,28 +8,32 @@
 </head>
 <body>
 	<div class="header clearfix">
-		<ul class="menu">
-			<li><a href="#">Meu Youbike</a></li>
-			<li><a href="#">Vender</a></li>
-			<li><a href="#">Forum</a></li>
-			<li><a href="#">Contato</a></li>
-			<li><a href="#">Ajuda</a></li>
-			<li>|</li>
-		</ul>
-		<ul class="menu_2">
-			<li><img src="img/flag.png" height="24" alt=""></li>
-			<li>Minhas Ofertas</li>
-			<li>Ola! <a href="#">Entrar</a> ou <a href="#">Cadastre-se</a></li>
-		</ul>
+		<div class="menu-header">
+			<ul class="menu">
+				<li><a href="#">Meu Youbike</a></li>
+				<li><a href="#">Vender</a></li>
+				<li><a href="#">Forum</a></li>
+				<li><a href="#">Contato</a></li>
+				<li><a href="#">Ajuda</a></li>
+			</ul>
+			<ul class="menu_2">
+				<li>Minhas Ofertas</li>
+				<li>Ola! <a href="#">Entrar</a> ou <a href="#">Cadastre-se</a></li>
+			</ul>
+		</div>
 	</div>
 	<div class="page">
 		<div class="form">
 			<h2>Cadastre-se</h2>
 			<form class="reg" action="">
-				<div>
-					<input type="button" class="facebook">
+				<div class="facebook_log">
+					<button type="button" class="facebook"><span>Log In</span> with <span>Facebook</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ></button>
 				</div>
-				<img src="img/ou.png" height="12" width="276" alt="">
+				<div class="ou">
+					<div class="float-ou border_ou"></div>
+					<div class="float-ou__text">OU</div>
+					<div class="float-ou border_ou"></div>
+				</div>
 				<ul>
 					<li>
 						<input type="text" placeholder="First Name" required>
@@ -50,8 +54,8 @@
 				<div class="check">
 					<input type="checkbox">Send me Youbike updates and tips
 				</div>
-				<div>
-					<input type="button" class="create" value="Create my Account">
+				<div class="button_submit">
+					<input type="submit" class="create" value="Create my Account">
 				</div>
 				<div class="text">
 					By clicking the button above, you agree to the Terms of Service Xiew our Privacy Policy.

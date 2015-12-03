@@ -10,6 +10,11 @@
 }
 
 body {
+	min-height: 1000px;
+	background-image: url(../img/body.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
 	font-family: Helvet, Arial, sans-serif;
 	font-size: 14px;
 	color: #fff;
@@ -31,9 +36,14 @@ body {
 	text-align: right
 }
 
+.menu-header {
+	width: 710px;
+	float: right;
+}
+
 /*MENU*/
 .menu {
-	margin-left: 350px;
+	position: relative;
 }
 
 .menu li {
@@ -41,10 +51,9 @@ body {
 }
 
 .menu>li>a {
-	position: relative;
 	padding: 0 13px;
 	display: block;
-	line-height: 39px;
+	line-height: 38px;
 	color: #60b5ed;
 	text-decoration: none;
 }
@@ -54,20 +63,41 @@ body {
 	color: #fff;
 }
 
-.menu li:last-child {
+
+
+.menu:after {
+	content: '|';
+	display: block;
+	position: absolute;
+	left: 370px;
 	font-size: 31px;
 	color: #60b5ed;
 	line-height: 38px;
 }
 
+.menu_2 {
+	position: relative;
+}
+
+.menu_2:before {
+	content: '';
+	position: absolute;
+	display: block;
+	height: 23px;
+	width: 24px;
+	left: 380px;
+	top: 8px;
+	background: url(../img/flag.png) no-repeat;
+}
+
 .menu_2 li {
 	float: left;
 	padding: 0 13px;
-	line-height: 39px;
+	line-height: 38px;
 }
 
 .menu_2 li:first-child {
-	padding: 0;
+	padding-left: 35px;
 }
 .menu_2 li img {
 	margin: 7px 0 0 18px;
@@ -85,35 +115,9 @@ body {
 }
 /*END OF MENU*/
 
-
 /*END OF HEADER*/
 
-.page {
-	min-height: 1000px;
-	background-image: url(../img/body.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: 50% 50%;
-}
-
 /*FORM*/
-input[class="facebook"] {
-	width: 275px;
-	height: 35px;
-	margin: 32px 0;
-	background-image: url(../img/facebook.png);
-	border-radius: 5px;
-	border: 2px outset #7789b9;
-}
-
-input[class="facebook"]:active {
-	border-style: inset;
-}
-
-.reg img {
-	margin-bottom: 20px;
-}
-
 .form {
     position: absolute; /* or absolute */
     top: 50%;
@@ -129,6 +133,85 @@ input[class="facebook"]:active {
 	color: #fff;
 	padding: 20px 20px;
 	border-bottom: 2px solid #c5ceb9;
+}
+
+/*FACEBOOK*/
+.facebook {
+	width: 220px;
+	height: 34px;
+	margin: 32px 0 32px 37px;
+	padding-left: 37px;
+	cursor: pointer;
+	border-style: none;
+	border-radius: 0 7px 7px 0;
+	border-left: 1px solid #4b68ac;
+	background: rgba(62,86,148,1);
+	background: -moz-linear-gradient(top, rgba(62,86,148,1) 0%, rgba(45,68,120,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(62,86,148,1)), color-stop(100%, rgba(45,68,120,1)));
+	background: -webkit-linear-gradient(top, rgba(62,86,148,1) 0%, rgba(45,68,120,1) 100%);
+	background: -o-linear-gradient(top, rgba(62,86,148,1) 0%, rgba(45,68,120,1) 100%);
+	background: -ms-linear-gradient(top, rgba(62,86,148,1) 0%, rgba(45,68,120,1) 100%);
+	background: linear-gradient(to bottom, rgba(62,86,148,1) 0%, rgba(45,68,120,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e5694', endColorstr='#2d4478', GradientType=0 );
+	color: #fff;
+	text-decoration: none;
+}
+
+button > span {
+	font-weight: bold;
+}
+
+button {
+	position: relative;
+}
+button:before {
+	content: '';
+	position: absolute;
+	height: 34px;
+	width: 37px;
+	top: 0;
+	left: -38px;
+	border-radius: 7px 0 0 7px;
+	border-right: 1px inset #213c71;
+	background: url(../img/facebook_icon.png) no-repeat;
+}
+
+.facebook:active {
+	border-style: none;
+}
+
+.facebook:hover {
+	box-shadow: 0px 0px 5px 2px rgba(78,137,180,1);
+}
+/*END OF FACEBOOK*/
+.reg img {
+	
+}
+
+.ou {
+	width: 257px;
+    height: 14px;
+    display: block;
+    margin-left: 150px;
+    margin-bottom: 20px;
+}
+
+.float-ou {
+	float: left;
+	width: 45%;
+    margin-top: 6px;
+}
+
+.float-ou__text {
+	float: left;
+    padding: 0 2px;
+    color: #999999;
+}
+
+.border_ou {
+	border-top: 1px solid #666666; 
+	border-bottom: 1px solid black;
+	height: 0;
 }
 
 *:focus {
@@ -164,6 +247,7 @@ input[class="facebook"]:active {
 input[class="create"] {
 	width: 148px;
 	height: 35px;
+	cursor: pointer;
 	border-radius: 5px;
 	border: 2px outset #6bb8e7;
 	background: rgba(80,174,219,1);
@@ -174,6 +258,10 @@ input[class="create"] {
 
 input[class="create"]:active {
 	border-style: inset;
+}
+
+input[class="create"]:hover {
+	box-shadow: 0px 0px 5px 2px rgba(78,137,180,1);
 }
 
 .check {
